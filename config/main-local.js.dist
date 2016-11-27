@@ -1,0 +1,9 @@
+/**
+ * Copy this file to main-local.js and override local config
+ */
+module.exports = {
+    server: {
+        port: 3000,
+        host: 'localhost'
+    }
+};
