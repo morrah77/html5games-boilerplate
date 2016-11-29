@@ -4,6 +4,8 @@ This boilerplate may be used for fast start with HTML5 browser games development
 No building tools are included, just a game boilerplate and some game samples.
 Provided with simple server based on nodejs.
 
+[http://games.morrah77.ru/]
+
 ## Installation
 
 The boilerplate games do not need installation and may run locally
