@@ -1,0 +1,14 @@
+video{
+    background-color: #666666;
+    border-width: 1px;
+}
+.container-content > .clear{
+    display: block;
+    clear: both;
+}
+.container-content > canvas{
+    float:right;
+}
+.container-content > video{
+    float: left;
+}

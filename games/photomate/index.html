@@ -2,12 +2,13 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Games at morrah77.ru - Table of contents</title>
+    <title>The Photomate game</title>
     <link rel="shortcut icon" href="/favicon.png" type="image/png" />
     <link rel="icon" href="/favicon.png" type="image/png" />
     <link rel="favicon" href="/favicon.png" type="image/png" />
     <link rel="stylesheet" href="/css/style.css" />
-    <script src="/js/script.js"></script>
+    <link rel="stylesheet" href="/games/photomate/css/style.css" />
+    <script src="/games/photomate/js/script.js"></script>
 </head>
 <body>
     <header>
@@ -20,16 +21,18 @@
         </nav>
     </header>
     <article>
-        <h1>HTML5 browser games</h1>
-        <p><a href="https://github.com/morrah77/html5games-boilerplate" target="_blank" title="git repository of html5 games boilerplate">https://github.com/morrah77/html5games-boilerplate</a>
-        <ul>
-            <li><a href="/games/canvas" title="Canvas">Canvas</a></li>
-            <li><a href="/games/ball" title="Ball">Ball</a></li>
-            <li><a href="/games/photomate" title="Photomate">Photomate</a></li>
-        </ul>
+        <h1>The Photomate game</h1>
+        <div id="gameContainer" class="container-content"></div>
     </article>
     <footer>
-        Copyright &copy; 2016
+        Copyright &copy; 2019
     </footer>
 </body>
+<script>
+window.addEventListener('load', function(event) {
+    if(typeof(gameObject) !== 'undefined') {
+        gameObject.init();
+    }
+});
+</script>
 </html>
