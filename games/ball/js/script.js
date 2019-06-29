@@ -62,6 +62,7 @@ var gameObject = (function(){
 
         this.saveButton = document.createElement('a');
         this.saveButton.setAttribute('id', 'gameSaveButton');
+        this.saveButton.setAttribute('download', 'ball.png');
         this.saveButton.appendChild(document.createTextNode('Save'));
 
         this.startButton = document.createElement('a');
@@ -95,7 +96,7 @@ var gameObject = (function(){
             clearInterval(this.gameInterval);
         }.bind(this));
         this.saveButton.addEventListener('click', function(event) {
-            this.saveButton.setAttribute('href', this.canvas.toDataURL());
+            this.saveButton.setAttribute('href', this.canvas.toDataURL('image/png'));
         }.bind(this));
         this.toolbar.hint.addEventListener('click', function(event) {
             if(!this.toolbar.hintContents){
