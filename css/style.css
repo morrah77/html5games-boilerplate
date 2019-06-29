@@ -7,17 +7,25 @@ html, body{
     background-color: #ffffff;
     color: #666666;
 }
+body{
+    min-height: 100vh;
+    position: relative;
+}
 header{
-    background-color: #666666;
+    background-color: #888;
 }
 article{
     padding: 1em;
 }
 body > article{
     min-height: 300px;
+    padding-bottom: 5em;
 }
 footer{
-    background-color: #666666;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #888;
     margin: 0;
     padding: 1em;
     color:#fff;
@@ -46,4 +54,29 @@ header nav ul li a, header nav ul li a:link, header nav ul li a:visited{
     min-height:400px;
     margin: 2em auto;
     background-color: #ffffff
+}
+canvas{
+    border: 1px #ccc solid;
+}
+.container-content #gameToolbar{
+    background-color: #dddddd;
+}
+.container-content #gameToolbar > *{
+    display:inline-block;
+    background-color: #ffffff;
+    padding: .6em;
+    margin: .3em;
+    color:#666666;
+    font-family: Arial, Helvetica, Sans-serif;
+    font-weight:400;
+    font-size: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.container-content #gameToolbar #gameToolbarHint{
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    text-align: center;
 }
