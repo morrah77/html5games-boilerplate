@@ -144,11 +144,12 @@ var gameObject = (function(){
         this.toolbar.setAttribute('id', 'gameToolbar');
         this.saveButton = document.createElement('a');
         this.saveButton.setAttribute('id', 'gameSaveButton');
+        this.saveButton.setAttribute('download', 'image.png');
         this.saveButton.appendChild(document.createTextNode('Save'));
         this.toolbar.appendChild(this.saveButton);
         this.container.insertBefore(this.toolbar, this.canvas);
         this.saveButton.addEventListener('click', function(event) {
-            this.saveButton.setAttribute('href', this.canvas.toDataURL());
+            this.saveButton.setAttribute('href', this.canvas.toDataURL('image/png'));
         }.bind(this));
     }
     return game;
