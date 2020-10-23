@@ -1,0 +1,1 @@
+.container{margin:auto;background-color:#fff}.Life{border:1px solid #888}.Life .row{margin:0;padding:0;border:none;display:block;font-size:0}.Life .row .cell{width:5px;height:5px;display:inline-block;border:1px solid #888;margin:0;padding:0;background-color:#000}.Life .row .cell[alive=true]{background-color:#0f0}.Life button{margin:10px}
