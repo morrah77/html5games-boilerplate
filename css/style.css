@@ -27,11 +27,14 @@ footer{
     width: 100%;
     background-color: #888;
     margin: 0;
-    padding: 1em;
+    padding: 0;
     color:#fff;
     font-family: Arial, Helvetica, Sans-serif;
     font-weight:400;
     font-size: 1.2em;
+}
+footer nav {
+    padding: 1em;
 }
 header nav ul{
     margin: 0;
