@@ -9,14 +9,14 @@ appServer = http.createServer(function(request, response) {
         return item.trim() !== '';
     });
     response.fileExt = (request.url.lastIndexOf('.')!==-1) ? request.url.substr(request.url.lastIndexOf('.')) : '';
-    if(appPath.length == 1) {
+    if(appPath.length === 1) {
         filePath = './' + config.app.staticPrefix + '/' + appPath[0] + '.html';
     }
     else{
         filePath = '.' + request.url + (('' === response.fileExt) ? '/index.html' : '');
     }
     try{
-        fs.readFile(filePath, function(error,contents) {
+        fs.readFile(filePath, function(error, contents) {
             if(null !== error) {
                 response.writeHeader(404, {'Content-Type': 'text/plain'});
                 response.end('Page "' + request.url + '" Not found');
@@ -29,7 +29,7 @@ appServer = http.createServer(function(request, response) {
     catch(err){
         console.dir(err);
         response.writeHeader(500, {'Content-Type': 'text/plain'});
-        response.end('An error occured during page processing, please try again later..')
+        response.end('An error occurred during page processing, please try again later..')
     }
 });
 appServer.listen(config.server.port, config.server.host);
